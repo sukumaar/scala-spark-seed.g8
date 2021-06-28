@@ -2,11 +2,11 @@ import sbt.Keys.libraryDependencies
 
 ThisBuild / scalaVersion     := "2.12.14"
 ThisBuild / version          := """$version$"""
-ThisBuild / organization     := """$organization$"""
+ThisBuild / organization     := "1.0-SNAPSHOT"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "$name$",
+    name := """$name;format="lower,hyphen"$""",
     libraryDependencies += scalaTest % Test,
     libraryDependencies += sparkCore % Test
   )
