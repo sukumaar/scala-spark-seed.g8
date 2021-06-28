@@ -1,9 +1,8 @@
 import sbt.Keys.libraryDependencies
 
 ThisBuild / scalaVersion     := "2.12.14"
-ThisBuild / version          := "0.1.0-SNAPSHOT"
-ThisBuild / organization     := "com.example"
-ThisBuild / organizationName := "example"
+ThisBuild / version          := "$version$"
+ThisBuild / organization     := "$organization$"
 
 lazy val root = (project in file("."))
   .settings(
